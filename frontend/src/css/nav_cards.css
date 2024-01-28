@@ -1,0 +1,100 @@
+.nav_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.nav_card {
+    min-width: 300px;
+    width: 24rem;
+    height: 36rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: rgb(240, 240, 240);
+    background-color: black;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, .2);
+    margin: 0px 100px;
+
+    font-family: 'Aqum';
+}
+
+@media screen and (max-width: 800px) {
+    .nav_cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_card {
+        width: 24rem;
+        height: 22rem;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        color: rgb(240, 240, 240);
+        background-color: black;
+        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, .2);
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        width: 100%;
+        margin: 25px auto 0px;
+    }
+
+    .nav_cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_card {
+        width: 16rem;
+        height: 22rem;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        color: rgb(240, 240, 240);
+        background-color: black;
+        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, .2);
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 32px;
+    }
+}
+
+.nav_card img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    transition: all 1s ease-in-out;
+}
+
+.nav_card:hover img {
+    transform: scale(1.125, 1.125);
+}
+
+.nav_card h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+    font-weight: normal;
+    text-transform: uppercase;
+}

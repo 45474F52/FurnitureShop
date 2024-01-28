@@ -1,0 +1,131 @@
+footer {
+    display: block;
+    position: relative;
+    margin-top: 100px;
+    padding-top: 41px;
+    background: #181818;
+}
+
+.about_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 33px;
+    flex: 1;
+    padding: 0px 20px;
+}
+
+/* @media only screen and (max-width: 1024px) {
+    footer .about_us {
+      flex-direction: column;
+    }
+  } */
+
+.logo_block {
+    flex: 1;
+    display: block;
+    order: 1;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #399;
+}
+
+.info_block {
+    order: 4;
+    flex: 1;
+}
+
+.tel_wrapper {
+    margin: 10px 0px;
+}
+
+.tel a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: none;
+    line-height: 28px;
+    color: #FFFFFF;
+    outline: none;
+    text-decoration-line: underline;
+}
+
+.tel a:hover,
+a:active {
+    color: #399;
+}
+
+.time_wrapper {
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.time_wrapper div {
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+}
+
+.email_wrapper {
+    margin-top: 84px;
+}
+
+@media screen and (max-width: 1024px) {
+    .email_wrapper {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.email_wrapper a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: none;
+    line-height: 32px;
+    color: #fff;
+    outline: none;
+}
+
+.email_wrapper a:hover,
+a:active {
+    color: #399;
+}
+
+footer .other_info {
+    background: #181818;
+    color: #606060;
+    border-top: 1px solid #424242;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px;
+}
+
+footer .copyright {
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer .extra {
+    display: block;
+}
+
+footer .extra a {
+    display: block;
+    color: #606060;
+    text-decoration-line: underline;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(51, 153, 153, 0.2);
+    outline: none;
+}

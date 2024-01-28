@@ -1,0 +1,18 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #181818;
+    z-index: 99;
+}
+
+header .logo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header a {
+    color: #399;
+    text-decoration: none;
+}
