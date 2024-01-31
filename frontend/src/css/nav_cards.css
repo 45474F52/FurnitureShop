@@ -17,58 +17,73 @@
     color: rgb(240, 240, 240);
     background-color: black;
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, .2);
-    margin: 0px 100px;
+    margin: 0px 80px;
 
     font-family: 'Aqum';
 }
 
-@media screen and (max-width: 800px) {
-    .nav_cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
+@media screen and (max-width: 1350px) {
     .nav_card {
-        width: 24rem;
+        min-width: 250px;
+        height: 30rem;
+        margin: 0px 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav_card {
+        min-width: 250px;
         height: 22rem;
-        border-radius: 10px;
-        overflow: hidden;
-        cursor: pointer;
-        position: relative;
-        color: rgb(240, 240, 240);
-        background-color: black;
-        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, .2);
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .nav_card {
+        min-width: 200px;
+        height: 18rem;
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 32px;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
     .wrapper {
         width: 100%;
         margin: 25px auto 0px;
     }
 
     .nav_cards {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .nav_card {
-        width: 16rem;
-        height: 22rem;
+        width: 26rem;
+        height: 18rem;
         border-radius: 10px;
-        overflow: hidden;
-        cursor: pointer;
-        position: relative;
-        color: rgb(240, 240, 240);
-        background-color: black;
-        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, .2);
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .wrapper {
+        width: 100%;
+        margin: 25px auto 0px;
+    }
+
+    .nav_cards {
+        flex-direction: column;
+    }
+
+    .nav_card {
+        width: 18rem;
+        height: 18rem;
+        border-radius: 10px;
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 32px;

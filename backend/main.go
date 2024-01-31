@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"furniture_shop/controllers"
 	"furniture_shop/dao/data_stores"
 	"furniture_shop/database"
@@ -39,6 +40,8 @@ func main() {
 	mux.Handle("/furnitures", f_controller)
 	mux.Handle("/categories", c_controller)
 	mux.Handle("/images", i_controller)
+
+	fmt.Println("SERVER STARTED")
 
 	http.ListenAndServe("0.0.0.0:"+os.Getenv("SERVERPORT"), corsMiddleware(mux))
 }
